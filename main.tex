@@ -1,0 +1,157 @@
+\documentclass{beamer}
+
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usecolortheme{default}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+}
+
+\setbeamertemplate{headline}{
+    \vspace{1.4cm}
+}
+
+
+
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\Tr}{Tr}
+
+\date{}
+
+\begin{document}
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{tit.pdf}}
+\begin{frame}[plain]
+    \titlepage
+    \vspace*{1cm}
+    \begin{flushright}
+    \textcolor{white}{
+    Internet Traffic Measurement \\
+    \bigskip
+    Student Barnaeva Marina Konstantinovna, \\
+    Student Kolganova Elizaveta Alekseevna \\
+    Samara
+    }
+    \end{flushright}
+\end{frame}
+}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{kol.pdf}}
+
+\begin{frame}[plain]
+
+    \centering
+    \tableofcontents
+\end{frame}
+  
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{kol.pdf}}
+
+\section{Introduction}
+\begin{frame}[plain]
+    
+    \vspace*{0.5cm}
+    \centering
+    \textcolor{white}{
+    Introduction \\
+    }
+
+    \vspace*{0.4cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[fill=cyan!50] (-3.5,6) circle (2cm);
+            \draw[fill=cyan!50] (3.5,6) circle (2cm);
+            \draw[->,cyan!50,line width=3pt] (-1,6) -- (1,6);
+            \pause
+            \node[align=center,text=white] at (-3.5,6) {\alert {The internet:} \\ evolves, supporting \\ a wide range \\ of applications.};
+            \node[align=center,text=white] at (3.5,6) {\alert{Research study} \\ traffic for \\ optimization \\ purposes.};
+            
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \includegraphics[width=7cm]{fig1.pdf}
+    \end{center}
+    \vspace*{1cm}
+\end{frame}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{kol.pdf}}
+\section{The measurement results}
+\begin{frame}[plain]
+    \vspace*{0.5cm}
+    \centering
+    \textcolor{white}{
+    The measurement results\\
+    }
+
+    \vspace*{0.4cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[fill=cyan!10] (-8,8) rectangle (-0.5,3);
+            \node[align=center,text=black] at (-4.25,5.5) {
+                \begin{minipage}{6cm}
+                    \centering
+                    \begin{alertblock}{The result shows:}
+                    - Internet traffic continues to change.\\
+                    - The aggregate network traffic has a multifractal nature.\\
+                    - Network traffic has the properties of “locality”.\\
+                    - Packet traffic is distributed unevenly.\\
+                    - The packet sizes are distributed bimodally.
+                    \end{alertblock}
+                    
+                    
+                \end{minipage}
+            };
+            \node at (4,5) {\includegraphics[width=6cm]{fig2.pdf}};
+        \end{tikzpicture}
+    \end{center}
+    \vspace*{1cm}
+\end{frame}
+
+
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{kol.pdf}}
+\section{Conclusion}
+\begin{frame}[plain]
+    \vspace*{0.2cm}
+    \centering
+    \textcolor{white}{
+    Conclusion \\
+    }
+
+    \vspace*{0.4cm}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+    Network measurement studies initially focused on local area networks, but over time they have grown in scope to help us understand the Internet, its protocols and its users
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    New initiatives focus on creating an efficient infrastructure for large-scale operational measurement of the global Internet.
+    \end{column}
+    \end{columns}
+    \begin{center}
+        \includegraphics[width=5cm]{fig3.pdf}
+    \end{center}
+    \vspace*{1cm}
+\end{frame}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{tit.pdf}}
+\begin{frame}[plain]
+    \vspace*{3cm}
+    \begin{flushright}
+        \textcolor{white}{
+        Thank you for your attention!
+        }
+    \end{flushright}
+    \vspace*{\fill}
+\end{frame}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{kol.pdf}}
+    
+
+\end{document}
